@@ -16,6 +16,8 @@ Type
 
     vector =   array[cantFacturas] Of factura;
 
+    //Procedure cargarVector(var v: vector; var dimL: Integer); Se dispone y no se implementa
+
 Function mayorFacturacion(v: vector; dimL: Integer):   Integer;
 
 Var 
@@ -44,6 +46,7 @@ Var
 
 Begin
     cargarVector(v, dimL);
+    //Se dispone
     If (dimL > 0) Then
         WriteLn('El codigo de sucursal con mayor cantidad de factura es: ', mayorFacturacion(v, dimL))
     Else
